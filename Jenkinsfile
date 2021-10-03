@@ -23,7 +23,7 @@ stage ('Artifacts') {
           stage('deploy') {
             steps {
                 // Tomcat deploy
-              withCredentials([usernameColonPassword(credentialsId: '94ca2537-06b4-430b-9547-82a0fa8d64bf' , variable: 'rithva')]) {sh "curl -v -u ${rithva} -T /var/lib/jenkins/workspace/spring3/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war 'http://ec2-3-6-87-142.ap-south-1.compute.amazonaws.com:8085/manager/text/deploy?path=/mahirithva&update=true'"  
+              withCredentials([usernameColonPassword(credentialsId: '94ca2537-06b4-430b-9547-82a0fa8d64bf' , variable: 'rithva')]) {sh "curl -v -u ${rithva} -T /var/lib/jenkins/workspace/spring3/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war 'http://ec2-3-6-87-142.ap-south-1.compute.amazonaws.com:8085/manager/text/deploy?path=/mahirithvamano&update=true'"  
               } 
          
         }
